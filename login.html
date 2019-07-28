@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Amity|Apply Now</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	
+
+<!--Search-->
+<script src="https://www.google.com/uds/api?file=uds.js&v=1.0&key=AIzaSyDeD9YCSjvGBxFb8Kf0VCDdK2OzN3jiPAU" type="text/javascript"></script>
+<script language="Javascript" type="text/javascript"> //<![CDATA[ // Create a search control var searchControl = new GSearchControl(); // create a search object searchControl.addSearcher(new GwebSearch()); // tell Google where to draw the searchbox searchControl.draw(document.getElementById("search-box")); } GSearch.setOnLoadCallback(OnLoad); //]]> </script>
+
+
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<script src="javascript/login.js"></script>
+
+</head>
+
+<body class="body">
+
+	<header class="mainheader">
+		<img src="images/logo.png">
+		<content id="search">
+			</content>
+
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">AUR</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="course.html">Courses</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="download.html">Downloads</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">Contact</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="login.html">Apply Now</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+	</header>
+
+	<div class="container">
+		<div class="main" style="width: 100%;">
+			<h3>Apply Online</h3><hr>
+			<div class="form-row">
+				<div class="col-md-4 mb-3">
+					<label for="validationDefault01">Name</label>
+					<input type="text" class="form-control" id="name" placeholder="" required>
+				</div>
+				<div class="col-md-4 mb-3">
+					<label for="validationDefault02">Contact</label>
+					<input type="text" class="form-control" id="number" placeholder="" required>
+				</div>
+				<div class="col-md-4 mb-3">
+					<label for="validationDefaultUsername">Subject</label>
+					<div class="input-group">
+						<input type="text" class="form-control" id="sub" placeholder=""
+							aria-describedby="inputGroupPrepend2" required>
+					</div>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="col-md-6 mb-3">
+					<label for="validationDefault03">E-mail</label>
+					<input type="text" class="form-control" id="email" placeholder="" required>
+				</div>
+				<div class="col-md-3 mb-3">
+					<label for="validationDefault04">City</label>
+					<input type="text" class="form-control" id="city" placeholder="" required>
+				</div>
+				<div class="col-md-3 mb-3">
+					<label for="validationDefault05">State</label>
+					<input type="text" class="form-control" id="state" placeholder="" required>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox""invalidCheck2" required>
+					<label class="form-check-label" for="invalidCheck2">
+						Agree to terms and conditions
+					</label>
+				</div>
+			</div>
+			<button class="btn btn-primary" style="font-size:20px;" type="submit" onclick="a()">
+				Submit form
+			</button>
+		</div>
+	</div>
+
+	<footer class="mainFooter">
+		<p>Copyright &copy AUR </p>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+
+	<script src="https://www.gstatic.com/firebasejs/6.3.0/firebase.js"></script>
+	<script>
+		// Your web app's Firebase configuration
+		var firebaseConfig = {
+			apiKey: "AIzaSyDUMWeW4zUcasO8OpzuVE3BpVlPvbqgKGE",
+			authDomain: "apply-now-c0ede.firebaseapp.com",
+			databaseURL: "https://apply-now-c0ede.firebaseio.com",
+			projectId: "apply-now-c0ede",
+			storageBucket: "",
+			messagingSenderId: "335462355472",
+			appId: "1:335462355472:web:e127b25045e6c82e"
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+	</script>
+
+	<script>
+		function a() {
+
+			var name = document.getElementById('name').value;
+			var number = document.getElementById('number').value;
+			var sub = document.getElementById('sub').value;
+			var city = document.getElementById('city').value;
+			var state = document.getElementById('state').value;
+
+			var email = document.getElementById('email').value;
+			var dt = new Date();
+			var utcDate = dt.toUTCString();
+
+			if (name.length != 0) {
+				if (number.length != 0) {
+					if (sub.length != 0) {
+						if (email.length != 0) {
+							if (city.length != 0) {
+								if (state.length != 0) {
+									//b();
+									//To Firebase
+			firebase.database().ref('apply/').push({
+				FullName: name,
+				Email: email,
+				Contact: number,
+				Subject: sub,
+				City: city,
+				State: state,
+				time_stamp: utcDate
+
+			});
+
+
+			alert("Your response has been recorded!");
+
+								}
+								else {
+									alert("Enter state!");
+								}
+							} else {
+								alert("Enter city!");
+							}
+						} else {
+							alert("Enter email!");
+						}
+					} else {
+						alert("Enter subject!");
+					}
+				} else {
+					alert("Enter contact number!");
+				}
+			} else {
+				alert("Enter Name!");
+			}
+		}
+		
+	</script>
+
+</body>
+
+</html>

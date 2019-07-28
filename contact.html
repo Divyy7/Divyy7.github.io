@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	
+<!--Search-->
+<script src="https://www.google.com/uds/api?file=uds.js&v=1.0&key=AIzaSyDeD9YCSjvGBxFb8Kf0VCDdK2OzN3jiPAU" type="text/javascript"></script>
+
+<script language="Javascript" type="text/javascript"> //<![CDATA[ // Create a search control var searchControl = new GSearchControl(); // create a search object searchControl.addSearcher(new GwebSearch()); // tell Google where to draw the searchbox searchControl.draw(document.getElementById("search-box")); } GSearch.setOnLoadCallback(OnLoad); //]]> </script>
+  <title>Amity|Contacts</title>
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="javascript/js.js"></script>
+  <script src="javascript/validatename.js"></script>
+
+</head>
+
+<body class="body">
+  <header class="mainheader">
+    <img src="images/logo.png">
+    <content id="search">
+      </content>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">AUR</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="course.html">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="download.html">Downloads</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Apply Now</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+
+  <div id="contact-page">
+    
+    <div id="contact-top">
+      <h3>Contact</h3>
+      <h4>Amity University Rajasthan<br>
+        Kant Kalwar, Jaipur, Rajasthan.</h4>
+      <h5>
+        Phone : +91-80592 51234<br>
+        Email : info@amity.edu<br>
+        Website: https://www.amity.edu/jaipur<br><br><br>
+      </h5>
+    </div>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14197.370677641264!2d75.9597298!3d27.1769648!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcbf4cc15ca702e72!2sAmity+University+Rajasthan!5e0!3m2!1sen!2sin!4v1542548648808"
+      width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    
+    <div id="contact-end">
+      <center>
+        <br><h4>If you are student please enter your Amizone ID:</h4>
+        <input id="numb"> 
+        <br><br>
+        <button type="button" onclick="myFunction()">Submit</button>
+        <hr>
+        <p id="demo"></p>
+      </center>
+    </div>
+  </div>
+
+  <footer class="mainFooter">
+    <p>Copyright &copy AUR</p>
+
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <script>
+    function myFunction() {
+      var x, text;
+
+      // Get the value of the input field with id="numb"
+      x = document.getElementById("numb").value;
+
+      // If x is Not a Number or less than one or greater than 1000
+      if (isNaN(x) || x < 1 || x > 10000000) {
+        text = "Input not valid";
+      } else {
+        text = "Input OK";
+      }
+      document.getElementById("demo").innerHTML = text;
+    }
+  </script>
+
+</body>
+
+</html>
